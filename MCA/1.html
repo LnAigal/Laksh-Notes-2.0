@@ -72,11 +72,11 @@
 
     /* Buttons */
     .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
+  display: flex;
+  flex-direction: column; /* stack buttons vertically */
+  gap: 20px; /* space between buttons */
+  margin-top: 30px;
+}
 
     .menu-item {
       text-align: center;
