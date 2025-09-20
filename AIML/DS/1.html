@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIML Notes</title>
+    <link id="theme-link" rel="stylesheet" href="../../themes/theme1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+    
+        /* Your CSS for the PDF container */
+        .pdf-container {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .pdf-container iframe {
+            width: 90%;
+            height: 500px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+    
+</head>
+<body>
+    <i class="fas fa-cog settings-btn" onclick="toggleSidebar()"></i>
+
+    <div class="sidebar" id="sidebar">
+        <h3>Settings</h3>
+        <button onclick="window.location.href='../../index.html'">Home</button>
+        <h4>Themes</h4>
+        <button onclick="setTheme('theme1.css')">Theme 1</button>
+        <button onclick="setTheme('theme2.css')">Theme 2</button>
+        <button onclick="setTheme('theme3.css')">Theme 3</button>
+        <button onclick="setTheme('theme4.css')">Theme 4</button>
+        <button onclick="setTheme('theme5.css')">Theme 5</button>
+        <button onclick="setTheme('theme6.css')">Theme 6</button>
+        <h4>Other</h4>
+        <button onclick="window.location.href='mailto:lakshwebsitedev@gmail.com'">Contact</button>
+        <button onclick="window.location.href='https://github.com/'">Contribute</button>
+    </div>
+
+
+        <header>
+            <h1><i class="fas fa-book-open"></i> LAKSH NOTES 2.0</h1>
+        </header>
+    
+        <h2><i class="fas fa-database"></i> Data Structures</h2>
+
+      <!-- Arrays & Pointers -->
+      <h3><i class="fas fa-th"></i> Arrays Pointers <i class="fas fa-location-arrow"></i></h3>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf1')"> C Practice Programs</button>
+  <div class="pdf-container" id="pdf1"style="width:100%;">
+    <iframe src="https://docs.google.com/document/d/16A9zoTnch4mbdwOxB8VacUs6PvWM6Ah_/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf2')"> Calculation of Address of 1D and 2D Arrays</button>
+  <div class="pdf-container" id="pdf2">
+    <iframe src="https://drive.google.com/file/d/1toHiI2rf2HIO3MNATQWZv5YMwyi9iFGy/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf3')"> Dynamic Allocation in Arrays</button>
+  <div class="pdf-container" id="pdf3">
+    <iframe src="https://docs.google.com/document/d/13wN0PraBfIR5b_Wc0erIKFHMm1km5Pvv/preview"></iframe>
+  </div>
+</div>
+
+<h3><i class="fas fa-project-diagram"></i> Structures</h3>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf4')"> Dynamic Memory Allocation to Structures</button>
+  <div class="pdf-container" id="pdf4">
+    <iframe src="https://docs.google.com/document/d/18FVqYT2H8XpCUZTPXHtWHiXxWWAf3b1j/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf5')"> Structures in C</button>
+  <div class="pdf-container" id="pdf5">
+    <iframe src="https://docs.google.com/document/d/1fYmnFvd5WUaQ76ohcALCMcMrS3ycT61G/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf6')"> UNIT 1_B_Structures</button>
+  <div class="pdf-container" id="pdf6">
+    <iframe src="https://docs.google.com/document/d/1TLptXX1VKyzWSU0kHmx4rJ6fIsqOmXCR/preview"></iframe>
+  </div>
+</div>
+
+<h3><i class="fas fa-memory"></i> Dynamic Memory allocations</h3>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf7')"> C pointers Dynamic Memory Allocation simpler version</button>
+  <div class="pdf-container" id="pdf7">
+    <iframe src="https://docs.google.com/document/d/1TRtdG33IfLV0kjiOP6piq1jM8RuOxB6a/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf8')"> C Pointers and Dynamic Memory Allocation</button>
+  <div class="pdf-container" id="pdf8">
+    <iframe src="https://drive.google.com/file/d/1B02-o-F-bieidmquhWT8__dQzwhuwBtd/preview"></iframe>
+  </div>
+</div>
+
+<h3><i class="fas fa-layer-group"></i> Stacks and Applications <i class="fas fa-cogs"></i></h3>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf9')"> Infix to Postfix Program C</button>
+  <div class="pdf-container" id="pdf9">
+    <iframe src="https://docs.google.com/document/d/1MFvXdO9oj1J5hryhTU0XUU8sAiQ1xFii/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf10')"> Infix to Postfix</button>
+  <div class="pdf-container" id="pdf10">
+    <iframe src="https://docs.google.com/document/d/1qVyDixqlSj1uX2rUEvvelfCAYWyLg7hZ/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf11')"> Program 1 Stack</button>
+  <div class="pdf-container" id="pdf11">
+    <iframe src="https://drive.google.com/file/d/1Q9aZyY8UPWwC7NeBLhjG7xWAIzJ6oXxT/preview"></iframe>
+  </div>
+</div>
+
+<div class="menu-item" style=" display:block;max-width: 1000px; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf12')"> Applications of Stacks</button>
+  <div class="pdf-container" id="pdf12">
+    <iframe src="https://docs.google.com/document/d/1EYR9N8RYlDIVkXadhEIpEERU0M8QCUy9/preview"></iframe>
+  </div>
+</div>
+
+
+
+
+
+        <footer>
+            <p>&copy; Lakshminarayana Aigal | 2025 Laksh Notes 2.0</p>
+        </footer>
+
+    <script>
+        // --- Sidebar and Theme Functions ---
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('selectedTheme');
+            if (savedTheme) {
+                document.getElementById('theme-link').href = "../../themes/" + savedTheme;
+            }
+        });
+        function setTheme(themeFile) {
+            document.getElementById('theme-link').href = "../../themes/" + themeFile;
+            localStorage.setItem('selectedTheme', themeFile);
+        }
+
+        // --- Your PDF Toggle Function ---
+        function togglePDF(id) {
+            const allPDFs = document.querySelectorAll('.pdf-container');
+            allPDFs.forEach(pdf => {
+                if (pdf.id === id) {
+                    // Toggles the display of the clicked PDF
+                    pdf.style.display = (pdf.style.display === "block") ? "none" : "block";
+                } else {
+                    // Hides all other PDFs
+                    pdf.style.display = "none";
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>

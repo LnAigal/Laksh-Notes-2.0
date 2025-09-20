@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIML Notes</title>
+    <link id="theme-link" rel="stylesheet" href="../../themes/theme1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+    
+        /* Your CSS for the PDF container */
+        .pdf-container {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .pdf-container iframe {
+            width: 90%;
+            height: 500px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+    
+</head>
+<body>
+    <i class="fas fa-cog settings-btn" onclick="toggleSidebar()"></i>
+
+    <div class="sidebar" id="sidebar">
+        <h3>Settings</h3>
+        <button onclick="window.location.href='../../index.html'">Home</button>
+        <h4>Themes</h4>
+        <button onclick="setTheme('theme1.css')">Theme 1</button>
+        <button onclick="setTheme('theme2.css')">Theme 2</button>
+        <button onclick="setTheme('theme3.css')">Theme 3</button>
+        <button onclick="setTheme('theme4.css')">Theme 4</button>
+        <button onclick="setTheme('theme5.css')">Theme 5</button>
+        <button onclick="setTheme('theme6.css')">Theme 6</button>
+        <h4>Other</h4>
+        <button onclick="window.location.href='mailto:lakshwebsitedev@gmail.com'">Contact</button>
+        <button onclick="window.location.href='https://github.com/'">Contribute</button>
+    </div>
+
+
+        <header>
+            <h1><i class="fas fa-book-open"></i> LAKSH NOTES 2.0</h1>
+        </header>
+    
+        <h2><i class="fas fa-brain"></i> Enhancing Self Competence</h2>
+
+
+<div class="menu-item" style=" display:block; margin-bottom:20px;">
+  <button onclick="togglePDF('pdf1')">UNIT-1</button>
+  <div class="pdf-container" id="pdf1" style="width:90%;">
+    <iframe src="https://drive.google.com/file/d/13I2erZVqlniNRC4lzyx5Glg6Xv_haiTR/view?usp=drivesdk"></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+        <footer>
+            <p>&copy; Lakshminarayana Aigal | 2025 Laksh Notes 2.0</p>
+        </footer>
+
+    <script>
+        // --- Sidebar and Theme Functions ---
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('selectedTheme');
+            if (savedTheme) {
+                document.getElementById('theme-link').href = "../../themes/" + savedTheme;
+            }
+        });
+        function setTheme(themeFile) {
+            document.getElementById('theme-link').href = "../../themes/" + themeFile;
+            localStorage.setItem('selectedTheme', themeFile);
+        }
+
+        // --- Your PDF Toggle Function ---
+        function togglePDF(id) {
+            const allPDFs = document.querySelectorAll('.pdf-container');
+            allPDFs.forEach(pdf => {
+                if (pdf.id === id) {
+                    // Toggles the display of the clicked PDF
+                    pdf.style.display = (pdf.style.display === "block") ? "none" : "block";
+                } else {
+                    // Hides all other PDFs
+                    pdf.style.display = "none";
+                }
+            });
+        }
+    </script>
+    
+</body>
+</html>

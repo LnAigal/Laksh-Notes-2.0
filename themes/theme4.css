@@ -1,0 +1,131 @@
+/* themes/theme4.css */
+/* Light Theme: Retro Green */
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 250px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto; 
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar h3 {
+  color: #00ff41;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  background: transparent;
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sidebar button:hover {
+  background: rgba(0, 255, 65, 0.1);
+  transform: scale(1.05);
+}
+
+/* Toggle icon */
+.settings-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #00ff41;
+  z-index: 1100;
+}
+
+/* Main content */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+}
+
+header {
+  background: #e9e9e9;
+  color: #444;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 50px 0 25px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 255, 65, 0.2);
+    border: 2px solid #00ff41;
+
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #00ff41;
+  text-shadow: none;
+}
+
+h2 {
+  margin: 20px;
+  letter-spacing: 1px;
+  color: #00ff41;
+  text-shadow: none;
+}
+.menu-item {
+  margin: 12px 0;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item button {
+  padding: 12px;
+  width: 90%;
+  max-width: 1000px;
+  background: transparent;
+  border: 2px solid #00ff41;
+  border-radius: 12px;
+  color: #00ff41;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 6px 20px rgba(0, 255, 65, 0.1);
+}
+
+.menu-item button:hover {
+  background: rgba(0, 255, 65, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 255, 65, 0.4);
+}
+
+footer {
+  margin-top: 35px;
+  font-size: 0.85em;
+  color: #666;
+}
