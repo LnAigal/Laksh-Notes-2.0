@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://lnaigal.github.io/Laksh-Notes-2.0/sitemap.xml
